@@ -70,18 +70,30 @@ h1,h2,h3{line-height:1.3;color:var(--text);}
 .cat-list li{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 12px;box-shadow:var(--shadow)}
 code{background:color-mix(in oklab, var(--chip) 95%, transparent);padding:.1rem .35rem;border-radius:6px;border:1px solid var(--border)}
 pre{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:12px;overflow:auto}
-/* === 修正導覽列反藍背景 === */
-.site-nav .page-link {
-  background: transparent !important; /* 移除反藍底色 */
-  padding: 4px 8px;
-  border-radius: 6px;
+/* === 導覽列字體統一白色 === */
+.site-title,
+.site-title:link,
+.site-title:visited {
+  color: var(--text) !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,.3);
 }
 
+.site-title:hover {
+  color: var(--accent) !important;
+}
+
+.site-nav .page-link,
+.site-nav .page-link:link,
+.site-nav .page-link:visited {
+  color: var(--text) !important;
+  font-weight: 600;
+}
+
+/* 這裡保留 hover 底色效果 */
 .site-nav .page-link:hover,
 .site-nav .page-link:focus,
 .site-nav .page-link:active {
-  background: rgba(255,255,255,0.1) !important; /* 滑過去只加微亮透明底 */
-  color: var(--accent) !important;             /* 保持藍字效果 */
+  background: rgba(255,255,255,0.08) !important; /* 更淡的透明底 */
+  color: var(--accent) !important;
   text-decoration: none !important;
 }
-
