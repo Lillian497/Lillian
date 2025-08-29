@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper container" style="display:flex;align-items:center;justify-content:space-between;">
+        <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <nav class="site-nav">
+          <a class="page-link" href="{{ '/archive/' | relative_url }}">Archive</a>
+          <a class="page-link" href="{{ '/categories/' | relative_url }}">Categories</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content" aria-label="Content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container muted">
+        © {{ "now" | date: "%Y" }} {{ site.title }}
+      </div>
+    </footer>
+  </body>
+</html>
