@@ -1,5 +1,5 @@
-title: 程式與實驗學習日記
-description: Jekyll + Minima｜自動列出文章、分類、時間軸歸檔（Light）— 歡迎來到我的學習筆記，我記錄了自己的物理研究所學到之基礎知識，以及程式的解題日誌！
+title: Lillian的程式與實驗學習日記
+description: 歡迎來到我的學習筆記，我記錄了自己的物理研究所學到之基礎知識，以及程式的解題日誌！
 # 如果你的 repo 名稱是 Lillian：
 baseurl: "/Lillian"                 # ← 改成你的 repo 名稱（User Page 請設為 ""）
 url: "https://lillian497.github.io" # ← 改成你的 GitHub 使用者頁（不要加 /repo）
