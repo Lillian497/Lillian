@@ -1,9 +1,13 @@
-title: 程式及實驗學習日記
-description: 自動列出文章，支援分類與時間軸歸檔（Jekyll + Minima）
-baseurl: "/Lillian"
-url: "https://lillian497.github.io"
+title: 程式與實驗學習日記（淺色版）
+description: Jekyll + Minima｜自動列出文章、分類、時間軸歸檔（Light）
+
+# 如果你的 repo 名稱是 Lillian：
+baseurl: "/Lillian"                 # ← 改成你的 repo 名稱（User Page 請設為 ""）
+url: "https://lillian497.github.io" # ← 改成你的 GitHub 使用者頁（不要加 /repo）
+
 theme: minima
 lang: zh-Hant
+
 header_pages:
   - archive.md
   - categories.md
