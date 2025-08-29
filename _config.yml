@@ -1,6 +1,6 @@
 title: 程式及實驗學習日記
 description: 自動列出文章、支援分類與時間軸歸檔的 Jekyll Blog（GitHub Pages 版）
-baseurl: "/my-site"         # ← 改成你的 repo 名稱（若是 username.github.io 請設為 ""）
+baseurl: "/Lillian"         # ← 改成你的 repo 名稱（若是 username.github.io 請設為 ""）
 url: "https://lillian497.github.io"  # ← 改成你的 GitHub 使用者頁
 theme: minima
 
