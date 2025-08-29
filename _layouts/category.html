@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<main class="container">
+  <h1>分類：{{ page.title }}</h1>
+  <ul class="post-list">
+    {% assign cname = page.category | default: page.title %}
+    {% for post in site.posts %}
+      {% if post.categories contains cname %}
+        <li class="post-item">
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          <p class="meta">{{ post.date | date: "%Y-%m-%d" }}</p>
+          {% if post.excerpt %}<p class="excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>{% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</main>
