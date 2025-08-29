@@ -12,10 +12,9 @@ title: 首頁
     <li class="post-item">
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
       <p class="meta">{{ post.date | date: "%Y-%m-%d" }}
-        {% if post.categories and post.categories.size > 0 %}
-          ·
+        {% if post.categories and post.categories.size > 0 %} ·
           {% for c in post.categories %}
-            <a class="chip" href="{{ '/categories/' | append: c | append: '.html' | relative_url }}">{{ c }}</a>{% unless forloop.last %}、{% endunless %}
+          <a class="chip" href="{{ '/categories/' | append: c | append: '.html' | relative_url }}">{{ c }}</a>{% unless forloop.last %}、{% endunless %}
           {% endfor %}
         {% endif %}
       </p>

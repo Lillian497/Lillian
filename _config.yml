@@ -1,0 +1,9 @@
+title: 程式及實驗學習日記
+description: 自動列出文章，支援分類與時間軸歸檔（Jekyll + Minima）
+baseurl: "/Lillian"
+url: "https://lillian497.github.io"
+theme: minima
+lang: zh-Hant
+header_pages:
+  - archive.md
+  - categories.md
