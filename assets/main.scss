@@ -71,4 +71,27 @@ h1,h2,h3{line-height:1.3;color:var(--text);}
 code{background:color-mix(in oklab, var(--chip) 95%, transparent);padding:.1rem .35rem;border-radius:6px;border:1px solid var(--border)}
 pre{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:12px;overflow:auto}
 
+/* === HOTFIX：導覽列恢復透明、不要覆蓋內容 === */
+header.site-header{
+  position: static !important;          /* 不黏住，避免覆蓋造成整頁變暗 */
+  background: transparent !important;   /* 透明，不加漸層 */
+  backdrop-filter: none !important;     /* 移除玻璃模糊 */
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(255,255,255,.18) !important;
+}
+
+/* 導覽列文字維持白色（你之前的設定可保留） */
+header.site-header a.site-title,
+header.site-header .site-nav .page-link {
+  color: #e9eefc !important;
+}
+
+/* 滑過時淡淡亮底就好，不要整塊反藍 */
+header.site-header .site-nav .page-link:hover {
+  background: rgba(255,255,255,.08) !important;
+  color: #7aa2ff !important;
+}
+
+/* 保險：上方內容不要被擠壓或蓋住 */
+.page-content { margin-top: 0 !important; padding-top: 0 !important; }
 
